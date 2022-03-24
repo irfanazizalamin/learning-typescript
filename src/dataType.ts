@@ -29,3 +29,9 @@ listOfBoolean = [true, false]
 // array of any
 let listOfAny: any[] = []
 listOfAny = [1, 'dua', true]
+
+// tuple
+let biodatas: [string, number]
+biodatas = ['lima', 5]
+// biodatas = ['lima', 5, true] to much value
+// biodatas = [1, 5] not match, because the first element should be string

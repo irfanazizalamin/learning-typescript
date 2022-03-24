@@ -8,3 +8,6 @@ age = 103;
 // boolean
 let isSingle = true;
 isSingle = false;
+// any
+let heroes = 'Iron Man';
+heroes = ['Iron Man', 'Super Man'];

@@ -1,0 +1,17 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "del build && tsc",
+    "ts": "del build && tsc -w",
+    "dev": "nodemon ./build/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

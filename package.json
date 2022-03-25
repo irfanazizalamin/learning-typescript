@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "del build && tsc",
     "ts": "del build && tsc -w",
-    "dev": "nodemon ./build/dataType.js"
+    "dev": "nodemon ./build/enum.js"
   },
   "devDependencies": {
     "typescript": "^4.6.2"

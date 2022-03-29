@@ -30,4 +30,8 @@ const addWithType = (val1, val2) => {
 const getFullName = (fName, lName = 'William') => {
     return fName + ' ' + lName;
 };
-console.log(getFullName('James'));
+// function with optional params
+const combineName = (person1, person2) => {
+    return person1.name + ' ' + (person2 === null || person2 === void 0 ? void 0 : person2.name);
+};
+console.log('akbar');

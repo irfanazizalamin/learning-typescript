@@ -50,4 +50,15 @@ const getFullName = (fName: string, lName: string = 'William') => {
   return fName + ' ' + lName
 }
 
-console.log(getFullName('James'))
+
+type Person = {
+  name: string,
+  age: number
+}
+
+// function with optional params
+const combineName = (person1: Person, person2?: Person): string => {
+  return person1.name + ' ' + person2?.name
+}
+
+console.log('akbar')

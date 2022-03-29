@@ -28,3 +28,7 @@ let biodatas;
 biodatas = ['lima', 5];
 // biodatas = ['lima', 5, true] to much value
 // biodatas = [1, 5] not match, because the first element should be string
+// Union: can be used to phone number case
+let phoneNumber;
+phoneNumber = '08578213213';
+phoneNumber = 628578213213;

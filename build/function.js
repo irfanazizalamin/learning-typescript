@@ -26,3 +26,8 @@ const result = multiply(2, 4);
 const addWithType = (val1, val2) => {
     return val1 + val2;
 };
+// function with default params
+const getFullName = (fName, lName = 'William') => {
+    return fName + ' ' + lName;
+};
+console.log(getFullName('James'));

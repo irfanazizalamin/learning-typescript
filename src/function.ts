@@ -43,3 +43,11 @@ type Tambah = (val1: number, val2: number) => number
 const addWithType: Tambah = (val1: number, val2: number): number => {
   return val1 + val2
 }
+
+
+// function with default params
+const getFullName = (fName: string, lName: string = 'William') => {
+  return fName + ' ' + lName
+}
+
+console.log(getFullName('James'))

@@ -33,4 +33,13 @@ const subtract = (val1: any, val2: any) => {
 }
 
 const result = multiply(2, 4)
-console.log('result', result)
+// console.log('result', result)
+
+
+
+// function as a type
+type Tambah = (val1: number, val2: number) => number
+
+const addWithType: Tambah = (val1: number, val2: number): number => {
+  return val1 + val2
+}

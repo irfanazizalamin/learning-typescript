@@ -23,4 +23,6 @@ const subtract = (val1, val2) => {
     return val1 - val2;
 };
 const result = multiply(2, 4);
-console.log('result', result);
+const addWithType = (val1, val2) => {
+    return val1 + val2;
+};

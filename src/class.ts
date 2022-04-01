@@ -22,6 +22,7 @@ class Admin extends User {
   read: boolean = true
   write: boolean = true
   phone: string
+  private _email: string = ''
 
   constructor (name: string, age: number, phone: string) {
     super(name, age)
@@ -34,7 +35,21 @@ class Admin extends User {
       write: this.write
     }
   }
+
+  set email(val: string) {
+    if (!val.includes('@')) {
+      console.log('email salah')
+    } else {
+      this._email = val
+    }
+  }
+
+  get email(): string {
+    return this._email
+  }
 }
 
 let user1 = new User('John', 28)
 let admin1 = new Admin('Joko', 25, '081434dasd3')
+admin1.email = 'cobacoba@gmail.com'
+console.log(admin1)

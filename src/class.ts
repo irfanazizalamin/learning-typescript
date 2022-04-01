@@ -15,7 +15,26 @@ export class User {
   }
 }
 
-let user1 = new User('John', 28)
+// private: only in that class
+// protected: only in that class and descendants
 
-console.log(user1.name)
-console.log(user1.getName())
+class Admin extends User {
+  read: boolean = true
+  write: boolean = true
+  phone: string
+
+  constructor (name: string, age: number, phone: string) {
+    super(name, age)
+    this.phone = phone
+  }
+
+  getRole = (): { read: boolean, write: boolean } => {
+    return {
+      read: this.read,
+      write: this.write
+    }
+  }
+}
+
+let user1 = new User('John', 28)
+let admin1 = new Admin('Joko', 25, '081434dasd3')

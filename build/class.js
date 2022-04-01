@@ -42,7 +42,12 @@ class Admin extends User {
         return this._email;
     }
 }
+Admin.roleName = 'Admin';
+Admin.getRoleName = () => {
+    return 'hey';
+};
 let user1 = new User('John', 28);
 let admin1 = new Admin('Joko', 25, '081434dasd3');
 admin1.email = 'cobacoba@gmail.com';
-console.log(admin1);
+console.log(Admin.roleName);
+console.log(Admin.getRoleName());
